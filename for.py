@@ -9,13 +9,19 @@ image = pygame.image.load('map.png')
 
 run = True
 
-btn = [[0, 0, 150, 120, 'a1'], [0, 120, 150, 120, 'b1']]
+btn = [[0, 0, 150, 120, 'a1'], [0, 120, 150, 120, 'b1'], [0, 240, 150, 200, 'c1'], [0, 440, 200, 260, 'd1']]
 def a1():
     win.blit(pygame.image.load('a1.png'), (150, 100))
 
 
 def b1():
     win.blit(pygame.image.load('b1.png'), (150, 100))
+
+def c1():
+    win.blit(pygame.image.load('c1.png'), (150, 100))
+
+def d1():
+    win.blit(pygame.image.load('d1.png'), (150, 100))
 
 while run:
     win.blit(image, (0, 0))
